@@ -172,13 +172,13 @@ export default function CareersPage() {
               </div>
             ))}
             <a
-              href={`mailto:mytarotlove@hellovizer.com?subject=${encodeURIComponent("Application — Product Owner")}`}
+              href={`mailto:hello@yourreading.com?subject=${encodeURIComponent("Application — Product Owner")}`}
               className="mt-10 inline-flex rounded-full px-3.5 py-2.5 text-base font-semibold ring-1 ring-neutral-950/15 hover:bg-neutral-950/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600 sm:py-2 sm:text-sm dark:ring-white/15 dark:hover:bg-white/5"
             >
               Apply for this role
             </a>
             <p className="mt-4 text-base text-neutral-600 sm:text-sm dark:text-neutral-400">
-              Send your CV and a short note to mytarotlove@hellovizer.com. PC
+              Send your CV and a short note to hello@yourreading.com. PC
               TECH MEDIA SL · Rafael Cabrera 1, Las Palmas de Gran Canaria.
             </p>
           </article>
