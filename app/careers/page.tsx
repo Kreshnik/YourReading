@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Hero } from "../hero";
 
 export const metadata: Metadata = {
   title: "Careers — YourReading",
@@ -122,16 +123,14 @@ export default function CareersPage() {
           </Link>
         </div>
       </header>
-      <main className="flex-1 px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="max-w-[35ch] font-display text-4xl font-medium tracking-tight text-balance sm:text-5xl">
-            Careers
-          </h1>
-          <p className="mt-6 max-w-[48ch] text-lg text-pretty text-neutral-600 dark:text-neutral-400">
-            We are building a place for private, real-time chat readings — and
-            we are just getting started. One role is open right now.
-          </p>
-          <article className="mt-16">
+      <main className="flex-1">
+        <Hero
+          badge="We're hiring"
+          title="Build the home of honest readings."
+          description="A small team across Las Palmas and Pristina, building private, real-time chat readings. One role is open right now."
+        />
+        <div className="mx-auto max-w-3xl px-6 pt-12 pb-16 sm:pt-16 sm:pb-20">
+          <article>
             <h2 className="font-display text-2xl font-medium tracking-tight text-balance sm:text-3xl">
               Product Owner
             </h2>
@@ -191,29 +190,33 @@ export default function CareersPage() {
                 </ul>
               </div>
             ))}
-            <a
-              href={`mailto:careers@yourreading.com?subject=${encodeURIComponent("Application — Product Owner")}`}
-              className="mt-10 inline-flex rounded-full px-3.5 py-2.5 text-base font-semibold ring-1 ring-neutral-950/15 hover:bg-neutral-950/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600 sm:py-2 sm:text-sm dark:ring-white/15 dark:hover:bg-white/5"
-            >
-              Apply for this role
-            </a>
-            <p className="mt-4 text-base text-neutral-600 sm:text-sm dark:text-neutral-400">
-              Send your CV and a short note to careers@yourreading.com. PC
-              TECH MEDIA SL · Rafael Cabrera 1, Las Palmas de Gran Canaria.
-            </p>
-            <p className="mt-8 max-w-[64ch] text-sm text-pretty text-neutral-600 dark:text-neutral-400">
-              PC TECH MEDIA SL is an equal-opportunity employer: we welcome
-              applications from all qualified candidates regardless of age,
-              gender, origin, belief, disability or orientation. Your CV and
-              application data are processed confidentially, used solely for
-              this recruitment process in accordance with the GDPR, and
-              deleted after the process closes.
-            </p>
+            <div className="mt-16 text-center">
+              <a
+                href={`mailto:careers@yourreading.com?subject=${encodeURIComponent("Application — Product Owner")}`}
+                className="inline-flex rounded-full bg-violet-600 px-5 py-3 text-base font-semibold text-white hover:bg-violet-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600 dark:bg-violet-500 dark:hover:bg-violet-400"
+              >
+                Apply for this role
+              </a>
+              <p className="mx-auto mt-4 max-w-[48ch] text-base text-neutral-600 sm:text-sm dark:text-neutral-400">
+                Send your CV and a short note to careers@yourreading.com. PC
+                TECH MEDIA SL · Rafael Cabrera 1, Las Palmas de Gran Canaria.
+              </p>
+            </div>
+            <div className="mt-16 border-t border-neutral-950/10 pt-8 dark:border-white/10">
+              <p className="max-w-[64ch] text-sm text-pretty text-neutral-600 dark:text-neutral-400">
+                PC TECH MEDIA SL is an equal-opportunity employer: we welcome
+                applications from all qualified candidates regardless of age,
+                gender, origin, belief, disability or orientation. Your CV and
+                application data are processed confidentially, used solely for
+                this recruitment process in accordance with the GDPR, and
+                deleted after the process closes.
+              </p>
+            </div>
           </article>
         </div>
       </main>
-      <footer className="px-6 py-8">
-        <p className="mx-auto max-w-3xl text-sm text-neutral-600 dark:text-neutral-400">
+      <footer className="px-6 py-8 text-center">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
           &copy; {new Date().getFullYear()} YourReading. All rights reserved.
         </p>
       </footer>

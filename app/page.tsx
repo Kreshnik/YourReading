@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="relative flex flex-1 flex-col items-center justify-center overflow-hidden px-6 py-24 text-center">
+      <main className="relative flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
         <div
           aria-hidden="true"
-          className="absolute top-1/2 left-1/2 -z-10 size-160 -translate-1/2 rounded-full bg-violet-500/15 blur-3xl dark:bg-violet-500/10"
+          className="fixed inset-0 -z-10 bg-radial from-violet-500/15 via-violet-500/5 to-transparent dark:from-violet-500/10 dark:via-violet-500/3"
         />
         <p className="font-display text-2xl text-violet-700 dark:text-violet-400">
           YourReading
