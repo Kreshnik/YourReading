@@ -41,20 +41,22 @@ const sections = [
     heading: "What you bring",
     items: [
       {
-        text: "Proven experience coordinating software delivery between business stakeholders and a remote or nearshore development team.",
+        label: "5+ years of experience as a Product Owner",
+        text: "(or comparable product role) in a software or platform environment, including 2+ years working with a remote or nearshore development team.",
       },
       {
-        text: "Agile fluency earned in practice: backlogs, sprints, story writing, acceptance.",
+        text: "A bachelor’s or master’s degree, or equivalent experience that proves the same level of thinking.",
+      },
+      {
+        label: "Full professional proficiency in Spanish and English",
+        text: "— Spanish is essential for our Las Palmas team; English is the working language with Kosovo.",
+      },
+      {
+        text: "Agile fluency earned in practice: backlogs, sprints, story writing, acceptance — plus comfort with data tooling and dashboards; numbers first, priorities second.",
       },
       {
         label: "Advanced AI capability:",
         text: "daily, hands-on command of modern AI systems — from analysis and prototyping to workflow automation — and the judgement to know what AI should and shouldn’t touch in a deeply human product.",
-      },
-      {
-        text: "Comfort with data tooling and dashboards; numbers first, priorities second.",
-      },
-      {
-        text: "Excellent written and spoken English; documentation people compliment.",
       },
     ],
   },
@@ -84,6 +86,24 @@ const sections = [
       {
         label: "A good storyteller.",
         text: "You make a roadmap feel like a journey both Las Palmas and Pristina want to join.",
+      },
+      {
+        label: "Senior in practice.",
+        text: "You’ve owned products long enough to carry natural authority with developers and stakeholders — and you still have the energy to build something new.",
+      },
+    ],
+  },
+  {
+    heading: "What we offer",
+    items: [
+      {
+        text: "A permanent, full-time contract with PC TECH MEDIA SL in Las Palmas de Gran Canaria.",
+      },
+      {
+        text: "Competitive salary and benefits, in line with the seniority of the role.",
+      },
+      {
+        text: "A central, visible role in a growing international platform group; occasional travel to Pristina.",
       },
     ],
   },
@@ -119,8 +139,8 @@ export default function CareersPage() {
               Where precision meets intuition.
             </p>
             <p className="mt-2 text-base text-neutral-600 sm:text-sm dark:text-neutral-400">
-              Las Palmas de Gran Canaria · Full-time · Direct counterpart of
-              our development team in Kosovo
+              Las Palmas de Gran Canaria · Permanent, full-time · Direct
+              counterpart of our development team in Kosovo
             </p>
             <div className="mt-6 max-w-[56ch] space-y-4 text-base/7 text-pretty text-neutral-600 dark:text-neutral-400">
               <p>
@@ -172,14 +192,22 @@ export default function CareersPage() {
               </div>
             ))}
             <a
-              href={`mailto:hello@yourreading.com?subject=${encodeURIComponent("Application — Product Owner")}`}
+              href={`mailto:careers@yourreading.com?subject=${encodeURIComponent("Application — Product Owner")}`}
               className="mt-10 inline-flex rounded-full px-3.5 py-2.5 text-base font-semibold ring-1 ring-neutral-950/15 hover:bg-neutral-950/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-600 sm:py-2 sm:text-sm dark:ring-white/15 dark:hover:bg-white/5"
             >
               Apply for this role
             </a>
             <p className="mt-4 text-base text-neutral-600 sm:text-sm dark:text-neutral-400">
-              Send your CV and a short note to hello@yourreading.com. PC
+              Send your CV and a short note to careers@yourreading.com. PC
               TECH MEDIA SL · Rafael Cabrera 1, Las Palmas de Gran Canaria.
+            </p>
+            <p className="mt-8 max-w-[64ch] text-sm text-pretty text-neutral-600 dark:text-neutral-400">
+              PC TECH MEDIA SL is an equal-opportunity employer: we welcome
+              applications from all qualified candidates regardless of age,
+              gender, origin, belief, disability or orientation. Your CV and
+              application data are processed confidentially, used solely for
+              this recruitment process in accordance with the GDPR, and
+              deleted after the process closes.
             </p>
           </article>
         </div>
